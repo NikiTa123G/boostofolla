@@ -136,10 +136,11 @@ body.lock {
 }
 .header .header-titele {
   position: absolute;
-  width: 80%;
+  max-width: 800px;
   z-index: 10;
   left: 50%;
   top: 50%;
+  margin: 0;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 800px) {
@@ -170,11 +171,12 @@ body.lock {
 .header .slider-header {
   width: 100%;
   position: relative;
+  outline: none;
 }
-.header .slider-header.animation .slick-arrow.slick-prev {
+.header .slider-header.load .slick-arrow.slick-prev {
   transform: translate(0, 0px);
 }
-.header .slider-header.animation .slick-arrow.slick-next {
+.header .slider-header.load .slick-arrow.slick-next {
   transform: translate(0, 0px);
 }
 .header .slider-header picture source,
@@ -184,12 +186,15 @@ body.lock {
   height: 100vh;
 }
 .header .slider-header .slick-track {
+  outline: none;
   display: flex;
 }
 .header .slider-header .slick-list {
+  outline: none;
   overflow: hidden;
 }
 .header .slider-header .slick-arrow {
+  outline: none;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -590,22 +595,25 @@ body.lock {
   transform: translatey(0%);
 }
 .worcs .worcs-footer .slider-worcs {
-  width: 95%;
-  margin: 0 auto;
   position: relative;
 }
 .worcs .worcs-footer .slider-worcs .slider-worcs-wrap {
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 5px 35px;
+}
+@media (max-width: 1024px) {
+  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap {
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 900px) {
+  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap {
+    padding: 5px 0px;
+  }
 }
 .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide {
   display: flex;
   flex-direction: row;
-}
-@media (max-width: 670px) {
-  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide p {
   margin: 10px 12px;
@@ -661,7 +669,7 @@ body.lock {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
   transition: 0.8s;
@@ -676,10 +684,14 @@ body.lock {
   top: 0;
 }
 .popaps .popap.open .popap-body .popap-content {
-  height: auto;
+  overflow: visible;
+  height: 100%;
   transform: perspective(0px) translate(0, 0%) rotatex(0deg);
   opacity: 1;
   visibility: visible;
+  transition-property: transform, opacity, height;
+  transition-duration: 1s, 1s, 0s;
+  transition-delay: 0s;
 }
 .popaps .popap .clouce-btn {
   text-decoration: none;
@@ -725,7 +737,7 @@ body.lock {
 .popaps .popap .popap-body .popap-content {
   transition-property: transform, opacity, height;
   transition-duration: 1s, 1s, 0s;
-  transition-: 0s, 0s, 1s;
+  transition-delay: 0s, 0s, 1s;
   height: 0;
   opacity: 0;
   min-width: 0;
@@ -774,90 +786,6 @@ body.lock {
   .popaps .popap .popap-body .popap-content .swiper-container .swiper-pagination {
     color: #000;
   }
-}
-.popaps .popap .popap-body .popap-content .form-container {
-  display: flex;
-  flex-direction: column;
-}
-.popaps .popap .popap-body .popap-content .form-container .popap-titele {
-  text-align: center;
-  font-weight: bold;
-  font-size: 26px;
-  color: #fff;
-  padding: 5px 15px;
-  position: relative;
-}
-.popaps .popap .popap-body .popap-content .form-container .popap-titele:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  display: block;
-  height: 1px;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0);
-  background: #404040;
-}
-.popaps .popap .popap-body .popap-content .form-container .wrap-form {
-  display: flex;
-  justify-content: space-between;
-}
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .name,
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .email {
-  margin: 10px;
-}
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .name p,
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .email p {
-  margin: 0 0 3px;
-  text-align: left;
-}
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .name input,
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .email input {
-  font-size: 17px;
-  padding: 5px 10px;
-  width: 350px;
-  border: 2px solid #494950;
-  outline: none;
-}
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .name input:focus,
-.popaps .popap .popap-body .popap-content .form-container .wrap-form .email input:focus {
-  border-color: #f26c4f;
-}
-.popaps .popap .popap-body .popap-content .form-container .massaeg-titele {
-  text-align: left;
-  margin: 0 10px;
-}
-.popaps .popap .popap-body .popap-content .form-container .massaeg-popap {
-  max-width: 750px;
-  padding: 5px 10px;
-  font-size: 17px;
-  outline: none;
-  border: 2px solid #494950;
-  margin: 3px 10px 5px;
-  resize: none;
-}
-.popaps .popap .popap-body .popap-content .form-container .massaeg-popap:focus {
-  border-color: #f26c4f;
-}
-.popaps .popap .popap-body .popap-content .form-container .submit-plan {
-  margin: 15px auto 0;
-  padding: 5px 35px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #fff;
-  background: #f6744b;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.popaps .popap .popap-body .popap-content .form-container .submit-plan:hover {
-  transform: translate(0, -1px);
-}
-.popaps .popap .popap-body .popap-content .form-container .submit-plan:focus {
-  color: #e5e5e5;
-  background: #d06340;
 }
 
 .video {
@@ -963,8 +891,11 @@ body.lock {
   cursor: pointer;
 }
 
+.woh_we_are {
+  margin: 40px 0;
+}
 .woh_we_are .woh_we-tabs {
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -1038,13 +969,14 @@ body.lock {
   }
   .woh_we_are .woh_we-tabs .tabs-1-body .tab-1-content .me {
     width: 500px !important;
-    margin: 10px auto !important;
+    margin-bottom: 10px;
+    left: 50% !important;
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 540px) {
   .woh_we_are .woh_we-tabs .tabs-1-body .tab-1-content .my_scils {
     margin: 5px auto !important;
-    width: 100% !important;
   }
   .woh_we_are .woh_we-tabs .tabs-1-body .tab-1-content .me {
     width: 100% !important;
