@@ -125,10 +125,11 @@
 	   	</div>
 	   	<div class="video-right anim-items">
 				<div class="pause"></div>
-				<picture>
-					<source srcset="img/poster-video.webp" type="image/webp">
-					<img src="img/poster-video.png" alt="">
-				</picture>
+				<picture class="video-img">
+		         <source srcset="img/poster-video.webp" type="image/webp">
+		         <img src="img/poster-video.jpg" alt="">
+		      </picture>
+				
 	   		<!-- <video src="video/video.mp4" poster="img/poster-video.png" controls=""></video> -->
 	   	</div>
 	   </div>
@@ -1479,18 +1480,15 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 			</div>
 			<div class="woh_we-tabs">
-				<div class="tabs-1 anim-items">
-					<label for="#tab-1-1" class="tab-woh_we-01 tab-1 active"></label>
-					<label for="#tab-1-2" class="tab-woh_we-01 tab-2"></label>
-					<label for="#tab-1-3" class="tab-woh_we-01 tab-3"></label>
-				</div>
-				<div class="tabs-1-body">
-					<input type="radio" name="radio" id="tab-1-1" checked>
-					<input type="radio" name="radio" id="tab-1-2">
-					<input type="radio" name="radio" id="tab-1-3">
-
-					<!--===tab-1===-->
-					<div class="tab-1-content anim-items tab-1">
+				
+				<!--===tab-1===-->
+				<div class="tab-1-content anim-items tab-1">
+					<wrap class="me-wrap">
+						<div class="tabs-1 anim-items">
+							<label for="tab-1-1" class="tab-woh_we-01 tab-1 active"></label>
+							<label for="tab-1-2" class="tab-woh_we-01 tab-2"></label>
+							<label for="tab-1-3" class="tab-woh_we-01 tab-3"></label>
+						</div>
 						<div class="me active tab-1">
 							<div class="me-poto"><img src="img/desing.jpg" alt=""></div>
 							<div class="me-name">JANE SMITH</div>
@@ -1506,6 +1504,7 @@
 									<img src="img/sot-set03.png" alt="">
 								</a>
 							</div>
+							
 						</div>
 						<div class="me tab-2">
 							<div class="me-poto"><img src="img/Administration.jpg" alt=""></div>
@@ -1539,53 +1538,57 @@
 								</a>
 							</div>
 						</div>
+					</wrap>
 
-						<div class="my_scils anim-items">
-							<div class="my_scils-titele">MY SKILLS</div>
-							<div class="my_scils-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							</div>
+					<input type="radio" name="radio" id="tab-1-1" checked>
+					<input type="radio" name="radio" id="tab-1-2">
+					<input type="radio" name="radio" id="tab-1-3">
+					
+					<div class="my_scils anim-items">
+						<h2 class="my_scils-titele">MY SKILLS</h2>
+						<div class="my_scils-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						</div>
 
-							<div class="my_scils-scil scil-1">
-								<div class="name_scil tab-1">PHOTOSHOP</div>
-								<div class="name_scil tab-2">ORGANIZATION</div>
-								<div class="name_scil tab-3">PHOTOSHOP</div>
-								<div class="progres_bar tab-1 tab-2 bar-1">
-									<span></span>
-								</div>
-								<div class="scil_prosent bar-1">88%</div>
+						<div class="my_scils-scil scil-1">
+							<div class="name_scil tab-1">PHOTOSHOP</div>
+							<div class="name_scil tab-2">ORGANIZATION</div>
+							<div class="name_scil tab-3">PHOTOSHOP</div>
+							<div class="progres_bar tab-1 tab-2 bar-1">
+								<span></span>
 							</div>
+							<div class="scil_prosent bar-1">88%</div>
+						</div>
 
-							<div class="my_scils-scil scil-2">
-								<div class="name_scil tab-1">ILLUSTRATOR</div>
-								<div class="name_scil tab-2">INTUITION</div>
-								<div class="name_scil tab-3">ALGORITTMS</div>
-								<div class="progres_bar tab-1 tab-2 bar-2">
-									<span></span>
-								</div>
-								<div class="scil_prosent bar-2">92%</div>
+						<div class="my_scils-scil scil-2">
+							<div class="name_scil tab-1">ILLUSTRATOR</div>
+							<div class="name_scil tab-2">INTUITION</div>
+							<div class="name_scil tab-3">ALGORITTMS</div>
+							<div class="progres_bar tab-1 tab-2 bar-2">
+								<span></span>
 							</div>
+							<div class="scil_prosent bar-2">92%</div>
+						</div>
 
-							<div class="my_scils-scil scil-3">
-								<div class="name_scil tab-1">SKETCH</div>
-								<div class="name_scil tab-2">STRESS TOLE.</div>
-								<div class="name_scil tab-3">LANGUAGE</div>
-								<div class="progres_bar tab-1 tab-2 bar-3">
-									<span></span>
-								</div>
-								<div class="scil_prosent bar-3">90%</div>
+						<div class="my_scils-scil scil-3">
+							<div class="name_scil tab-1">SKETCH</div>
+							<div class="name_scil tab-2">STRESS TOLE.</div>
+							<div class="name_scil tab-3">LANGUAGE</div>
+							<div class="progres_bar tab-1 tab-2 bar-3">
+								<span></span>
 							</div>
+							<div class="scil_prosent bar-3">90%</div>
+						</div>
 
-							<div class="my_scils-scil scil-4">
-								<div class="name_scil tab-1">AFTER EFFECTS</div>
-								<div class="name_scil tab-2">AFTER EFFECTS</div>
-								<div class="name_scil tab-3">LIBRARY</div>
-								<div class="progres_bar tab-1 tab-2 bar-4">
-									<span></span>
-								</div>
-								<div class="scil_prosent bar-4">98%</div>
+						<div class="my_scils-scil scil-4">
+							<div class="name_scil tab-1">AFTER EFFECTS</div>
+							<div class="name_scil tab-2">AFTER EFFECTS</div>
+							<div class="name_scil tab-3">LIBRARY</div>
+							<div class="progres_bar tab-1 tab-2 bar-4">
+								<span></span>
 							</div>
+							<div class="scil_prosent bar-4">98%</div>
 						</div>
 					</div>
 				</div>
@@ -1853,6 +1856,7 @@
 
 		</div>
 	</div>
+
 	<div class="content">
 		<div class="contact">
 			<div class="global-titele anim-items">GET IN TOUCH</div>
@@ -1882,16 +1886,16 @@
 	</div>	
 	<div class="map">
 		<button class="open-btn">
-			LOCATE ON MAP
-			<p>
+			LOCATE ON MAP<p>
 				<img src="img/^.png" alt="">
 			</p>
 		</button>
-		<picture>
+		<picture class="img-map">
 			<source srcset="img/map.webp" type="image/webp">
 			<img src="img/map.png" alt="">
 		</picture>
 	</div>
+
 	<footer class="footer">
 		
 		<img src="img/logo.png" alt="" class="footer-logo">
