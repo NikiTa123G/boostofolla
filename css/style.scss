@@ -1433,6 +1433,7 @@ body{
 				transform: translate(0, -5px);
 				.block-icon{
 					.icon-bg{
+						transition: .6s;
 						opacity: 0;
 					}
 					.watch,
@@ -1456,17 +1457,22 @@ body{
 					background: #787474;
 					left: 0;
 					top: 0;
-					transition: .5s;
+					transition: all .5s ease .15s;
 					@media (max-width: 1200px) {
 						opacity: 0;
 					}
 				}
 				.watch{
-					left: 55%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 70px;
+					height: 70px;
+					text-decoration: none;
+					right: 22%;
 					top: 75px;
 					border-radius: 50%;
 					position: absolute;
-					padding: 20px;
 					z-index: 2;
 					background: #f6e5e0;
 					opacity: 0;
@@ -1482,14 +1488,20 @@ body{
 					}
 				}
 				.chain{
-					left: 25%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 70px;
+					height: 70px;
+					text-decoration: none;
+					left: 22%;
 					top: 75px;
 					border-radius: 50%;
 					position: absolute;
-					padding: 20px;
 					z-index: 2;
 					background: #e87e5d;
-					opacity: 0;color: #fff;
+					opacity: 0;
+					color: #fff;
 					transition: all .6s ease .1s, background .4s, color .4s;
 					transform: translate(0, 30%);
 					&:hover{
@@ -1794,7 +1806,7 @@ body{
 	height: 65px;
 	transition: .8s;
 	&.open{
-		height: 100vh;
+		height: 70vh;
 		.open-btn p{
 			transform: rotate(0deg);
 			transition: .8s;
@@ -1829,16 +1841,6 @@ body{
 			color: #f6744b;
 			font-weight: bold;
 			font-size: 20px;
-		}
-	}
-	.img-map{
-		height: auto;
-		width: 100%;
-		source,
-		img{
-			object-fit: cover;
-			display: block;
-			overflow-anchor: none;
 		}
 	}
 }

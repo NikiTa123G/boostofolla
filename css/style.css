@@ -1373,6 +1373,7 @@ body.lock {
   transform: translate(0, -5px);
 }
 .blog .blog-body .blog-block:hover .block-icon .icon-bg, .blog .blog-body .blog-block:focus .block-icon .icon-bg {
+  transition: 0.6s;
   opacity: 0;
 }
 .blog .blog-body .blog-block:hover .block-icon .watch,
@@ -1396,7 +1397,7 @@ body.lock {
   background: #787474;
   left: 0;
   top: 0;
-  transition: 0.5s;
+  transition: all 0.5s ease 0.15s;
 }
 @media (max-width: 1200px) {
   .blog .blog-body .blog-block .block-icon .icon-bg {
@@ -1404,11 +1405,16 @@ body.lock {
   }
 }
 .blog .blog-body .blog-block .block-icon .watch {
-  left: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  right: 22%;
   top: 75px;
   border-radius: 50%;
   position: absolute;
-  padding: 20px;
   z-index: 2;
   background: #f6e5e0;
   opacity: 0;
@@ -1424,11 +1430,16 @@ body.lock {
   color: #f58c6c;
 }
 .blog .blog-body .blog-block .block-icon .chain {
-  left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  left: 22%;
   top: 75px;
   border-radius: 50%;
   position: absolute;
-  padding: 20px;
   z-index: 2;
   background: #e87e5d;
   opacity: 0;
@@ -1721,7 +1732,7 @@ body.lock {
   transition: 0.8s;
 }
 .map.open {
-  height: 100vh;
+  height: 70vh;
 }
 .map.open .open-btn p {
   transform: rotate(0deg);
@@ -1756,16 +1767,6 @@ body.lock {
   color: #f6744b;
   font-weight: bold;
   font-size: 20px;
-}
-.map .img-map {
-  height: auto;
-  width: 100%;
-}
-.map .img-map source,
-.map .img-map img {
-  object-fit: cover;
-  display: block;
-  overflow-anchor: none;
 }
 
 .footer {
