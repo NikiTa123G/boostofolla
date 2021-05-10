@@ -1768,6 +1768,10 @@ body.lock {
   font-weight: bold;
   font-size: 20px;
 }
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
 
 .footer {
   overflow-anchor: none;
