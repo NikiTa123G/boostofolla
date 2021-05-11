@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -155,6 +156,7 @@ body.lock {
 .header .header-titele .header-sub-titele-2 {
   font-size: 50px;
   font-weight: bolder;
+  display: block;
   text-align: center;
   padding: 5px 15px;
   margin: 0;
@@ -627,22 +629,19 @@ body.lock {
     margin: 0px 0 0 12px;
   }
 }
-.worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide picture {
+.worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide .wrap-img img {
+  display: flex;
   margin-right: 15px;
-}
-@media (max-width: 400px) {
-  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide picture {
-    margin-right: 0;
-  }
-}
-.worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide picture source,
-.worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide picture img {
   object-fit: cover;
   height: 100%;
 }
 @media (max-width: 400px) {
-  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide picture source,
-.worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide picture img {
+  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide .wrap-img img {
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  .worcs .worcs-footer .slider-worcs .slider-worcs-wrap .slide .wrap-img img {
     width: 40px;
     height: auto;
   }
@@ -1734,11 +1733,12 @@ body.lock {
 .map.open {
   height: 70vh;
 }
-.map.open .open-btn p {
+.map.open .open-btn span {
   transform: rotate(0deg);
   transition: 0.8s;
 }
 .map .open-btn {
+  padding: 12px 5px;
   background: #0c1215;
   width: 100%;
   border: none;
@@ -1757,10 +1757,11 @@ body.lock {
   background: #111;
   color: #b3b3b3;
 }
-.map .open-btn:hover p {
+.map .open-btn:hover span {
   opacity: 0.8;
 }
-.map .open-btn p {
+.map .open-btn span {
+  margin: 10px 0;
   margin-left: 10px;
   transition: 0.6s;
   transform: rotate(180deg);

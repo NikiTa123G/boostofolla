@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap');
+
 body{
 	padding: 0;
 	margin: 0;
@@ -154,6 +156,7 @@ body{
 		.header-sub-titele-2{
 			font-size: 50px;
 			font-weight: bolder;
+			display: block;
 			text-align: center;
 			padding: 5px 15px;
 			margin: 0;
@@ -582,6 +585,7 @@ body{
 					display: flex;
 					flex-direction: row;
 					justify-content: center;
+					// position: relative;
 					p{
 						@media (max-width: 400px) {
 							font-size: 20px;
@@ -592,19 +596,20 @@ body{
 						color: #888;
 						text-align: center;
 					}
-					picture{
-						margin-right: 15px;
-						@media (max-width: 400px) {
-							margin-right: 0;
-						}
-						source,
+					.wrap-img{
 						img{
+							display: flex;
+							margin-right: 15px;
+							object-fit: cover;
+							// width: auto;
+							height: 100%;
+							@media (max-width: 400px) {
+								margin-right: 0;
+							}
 							@media (max-width: 400px) {
 								width: 40px;
 								height: auto;
 							}
-							object-fit: cover;
-							height: 100%;
 						}
 					}
 				}
@@ -1807,12 +1812,13 @@ body{
 	transition: .8s;
 	&.open{
 		height: 70vh;
-		.open-btn p{
+		.open-btn span{
 			transform: rotate(0deg);
 			transition: .8s;
 		}
 	}
 	.open-btn{
+		padding: 12px 5px;
 		background: #0c1215;
 		width: 100%;
 		border: none;
@@ -1830,11 +1836,12 @@ body{
 		&:hover{
 			background: #111;
 			color: #b3b3b3;
-			p{
+			span{
 				opacity: 0.8;
 			}
 		}
-		p{
+		span{
+			margin: 10px 0;
 			margin-left: 10px;
 			transition: .6s;
 			transform: rotate(180deg);
