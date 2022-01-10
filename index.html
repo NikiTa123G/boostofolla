@@ -126,11 +126,13 @@
 	   	</div>
 	   	<div class="video-right anim-items">
 				<div class="pause"></div>
-				<picture class="video-img">
-		         <source srcset="img/poster-video.webp" type="image/webp">
-		         <img src="img/poster-video.jpg" alt="">
-		      </picture>
-				
+				<div class="video-wrap">
+					<picture class="video-img visible">
+			         <source srcset="img/poster-video.webp" type="image/webp">
+			         <img src="img/poster-video.jpg" alt="">
+			      </picture>
+			      <iframe load="lazy" class="iframe-video" src="https://www.youtube.com/embed/Zv11L-ZfrSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 	   		<!-- <video src="video/video.mp4" poster="img/poster-video.png" controls=""></video> -->
 	   	</div>
 	   </div>
@@ -1084,56 +1086,64 @@
 		   							<div id="slide-1-2" class="swiper-slide sli-1">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web01.webp">
-											<img src="img/web01.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web01.jpg">
+												<img src="img/web01.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-2===-->
 		   							<div id="slide-2-2" class="swiper-slide sli-2">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web.webp">
-											<img src="img/web.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web.jpg">
+												<img src="img/web.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-3===-->
 		   							<div id="slide-3-2" class="swiper-slide sli-1">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web01.webp">
-											<img src="img/web01.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web01.jpg">
+												<img src="img/web01.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-4===-->
-		   							<div id="slide-2-4" class="swiper-slide sli-2">
+		   							<div id="slide-4-2" class="swiper-slide sli-2">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web.webp">
-											<img src="img/web.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web.jpg">
+												<img src="img/web.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-5===-->
 		   							<div id="slide-5-2" class="swiper-slide sli-1">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web01.webp">
-											<img src="img/web01.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web01.jpg">
+												<img src="img/web01.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-6===-->
 		   							<div id="slide-6-2" class="swiper-slide sli-2">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web.webp">
-											<img src="img/web.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web.jpg">
+												<img src="img/web.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-7===-->
 		   							<div id="slide-7-2" class="swiper-slide sli-1">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web01.webp">
-											<img src="img/web01.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web01.jpg">
+												<img src="img/web01.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-8===-->
 		   							<div id="slide-8-2" class="swiper-slide sli-2">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/web.webp">
-											<img src="img/web.jpg" alt="Изображение">
+												<source type="image/jpeg" srcset="img/web.jpg">
+												<img src="img/web.jpg" alt="Изображение">
 				   						</picture>
 				   					</div>
 				   					<!--===img-9===-->
@@ -1208,7 +1218,7 @@
 				   						</picture>
 				   					</div>
 				   					<!--===img-4===-->
-		   							<div id="slide-3-4" class="swiper-slide sli-1">
+		   							<div id="slide-4-3" class="swiper-slide sli-1">
 				   						<picture class="slide-pcture">
 				   							<source type="image/webp" srcset="img/brand04.webp">
 												<img src="img/brand04.jpg" alt="Изображение">
@@ -1391,39 +1401,39 @@
 	   			<div class="slider-worcs swiper-container">
 				   	<div class="slider-worcs-wrap swiper-wrapper">
 				   		<div class="slide swiper-slide">
-				   			<div class="wrap-img">
+				   			<wrap class="wrap-img">
 				   				<img src="img/bear.png" alt="">
-				   			</div>
+				   			</wrap>
 				   			<p>themeforest</p>
 				   		</div>
 				   		<div class="slide swiper-slide">
-				   			<div class="wrap-img">
+				   			<wrap class="wrap-img">
 				   				<img src="img/fish.png" alt="">
-				   			</div>
+				   			</wrap>
 				   			<p>graphicriver</p>
 				   		</div>
 				   		<div class="slide swiper-slide">
-				   			<div class="wrap-img">
+				   			<wrap class="wrap-img">
 				   				<img src="img/bee.png" alt="">
-				   			</div>
+				   			</wrap>
 				   			<p>videohive</p>
 				   		</div>
 				   		<div class="slide swiper-slide">
-				   			<div class="wrap-img">
+				   			<wrap class="wrap-img">
 				   				<img src="img/bear.png" alt="">
-				   			</div>
+				   			</wrap>
 				   			<p>themeforest</p>
 				   		</div>
 				   		<div class="slide swiper-slide">
-				   			<div class="wrap-img">
+				   			<wrap class="wrap-img">
 				   				<img src="img/fish.png" alt="">
-				   			</div>
+				   			</wrap>
 				   			<p>graphicriver</p>
 				   		</div>
 				   		<div class="slide swiper-slide">
-				   			<div class="wrap-img">
+				   			<wrap class="wrap-img">
 				   				<img src="img/bee.png" alt="">
-				   			</div>
+				   			</wrap>
 				   			<p>videohive</p>
 				   		</div>
 				   	</div>
@@ -1447,7 +1457,7 @@
 				
 				<!--===tab-1===-->
 				<div class="tab-1-content anim-items tab-1">
-					<div class="me-wrap">
+					<wrap class="me-wrap">
 						<div class="tabs-1 anim-items">
 							<label for="tab-1-1" class="tab-woh_we-01 tab-1 active"></label>
 							<label for="tab-1-2" class="tab-woh_we-01 tab-2"></label>
@@ -1502,7 +1512,7 @@
 								</a>
 							</div>
 						</div>
-					</div>
+					</wrap>
 
 					<input type="radio" name="radio" id="tab-1-1" checked>
 					<input type="radio" name="radio" id="tab-1-2">
@@ -1880,14 +1890,14 @@
 		</div>
 	</footer>	
    
-   
+	<script src="js/swiper-bundle.js"></script>
+	<!-- <script src="js/swiper-bundle.min.js"></script> -->
    <script src="js/jquery-3.5.1.min.js"></script>
    <script src="js/slick.min.js"></script>
-	<script src="js/swiper-bundle.min.js"></script>
-   <!-- <script src="js/script.js"></script> -->
+   <script src="js/script.js"></script>
    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 
 		// document.addEventListener('DOMContentLoaded', function () { 
 
@@ -2358,7 +2368,7 @@
 			});
 
 		// });
-	</script>
+	</script> -->
 
   </body>
 </html>
